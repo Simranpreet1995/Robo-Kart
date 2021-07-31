@@ -22,12 +22,11 @@ Controlling the trolley:
 4. Use the arrow keys to control the trolley system
 
 Video steps are as follows:
-https://user-images.githubusercontent.com/24194354/127739818-b5fcbb7f-5ab3-42c1-a87b-a850367f7d42.MP4
-
+https://user-images.githubusercontent.com/24194354/127740261-193d65b3-9837-46d9-af1b-4c595efd0cf2.mov
 https://user-images.githubusercontent.com/24194354/127739871-e004b98e-fc5c-4c4a-9837-fb0a6092308e.MOV
 
 Demo of a real world robotic Trolley System created by me:
-https://user-images.githubusercontent.com/24194354/127740056-f1d6b45c-3ffc-44c3-b1ba-e0b82ddddaf1.mp4
+https://user-images.githubusercontent.com/24194354/127740268-f6eae9bd-fe3e-4a48-a2a9-fcae3eb0d0a0.mov
 
 
 
