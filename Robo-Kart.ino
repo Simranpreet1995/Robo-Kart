@@ -3,15 +3,15 @@
 #include "esp_camera.h"
 #include <WiFi.h>
 
-// WARNING!!! Make sure that you have either selected ESP32 Wrover Module
+//Note: Make sure that you have selected ESP32 Wrover Module in the Arduino IDE
 
 //Select camera model
 //#define CAMERA_MODEL_WROVER_KIT
 //#define CAMERA_MODEL_M5STACK_PSRAM
 #define CAMERA_MODEL_AI_THINKER
 
-const char* ssid = "RoboKart";   //Enter SSID WIFI Name
-const char* password = "DEFAULT_PASSWORD";   //Enter WIFI Password
+const char* ssid = "RoboKart"; //Enter SSID WIFI Name
+const char* password = "DEFAULT_PASSWORD"; //Enter WIFI Password
 
 //Pin Definition
 #if defined(CAMERA_MODEL_WROVER_KIT)
@@ -57,7 +57,7 @@ const char* password = "DEFAULT_PASSWORD";   //Enter WIFI Password
 #error "Camera model not selected"
 #endif
 
-// GPIO Settings
+//GPIO Settings
 extern int gpLb =  2; // Left 1
 extern int gpLf = 14; // Left 2
 extern int gpRb = 15; // Right 1
@@ -130,14 +130,12 @@ void setup() {
     config.fb_count = 1;
   }
 
-  // camera init
+  //Camera init
   esp_err_t err = esp_camera_init(&config);
   if (err != ESP_OK) {
     Serial.printf("Camera init failed with error 0x%x", err);
     return;
   }
-
-  //drop down frame size for higher initial frame rate
   sensor_t * s = esp_camera_sensor_get();
   s->set_framesize(s, FRAMESIZE_CIF);
 
@@ -155,6 +153,6 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  //Code that needs to run repeatedly should be added here
 
 }
