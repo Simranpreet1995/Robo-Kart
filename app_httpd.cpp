@@ -310,7 +310,6 @@ static esp_err_t status_handler(httpd_req_t *req){
 }
 
 //Add your Server HTML and Javascript code here
-
 static esp_err_t index_handler(httpd_req_t *req){
     httpd_resp_set_type(req, "text/html");
     String page = "";
@@ -390,8 +389,7 @@ static esp_err_t robotSpeed_handler(httpd_req_t *req){
     return httpd_resp_send(req, "OK", 2);
 }
 
-
-
+//API Request URIs
 void startCameraServer(){
     httpd_config_t config = HTTPD_DEFAULT_CONFIG();
 
@@ -508,8 +506,7 @@ void startCameraServer(){
     }
 }
 
-//Function to control the cart movement
- 
+//Function to control the cart movement 
 void WheelAct(int nLf, int nLb, int nRf, int nRb, int nRs)
 {
  digitalWrite(gpLf, nLf);
