@@ -1,6 +1,6 @@
 # Robo-Kart
 This repository contains the embedded C code to build and implement a robotic trolley system using an ESP-32 Cam microcontroller. 
-This readme will guide you on how to implement a smartphone/laptop controlled robotic trolley system. The tutorial assume basic knowledge of working with microcontroller circuits listed below.
+This readme will guide you on how to implement a smartphone/laptop controlled robotic trolley system. The tutorial assumes basic knowledge of working with microcontroller circuits listed below.
 
 Components Used:
 1. ESP32-Cam module 
